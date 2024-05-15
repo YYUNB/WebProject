@@ -8,6 +8,11 @@ navBtns.forEach((btn, index) => {
     });
 });
 
+for (let i = 0; i < navBtns.length; i++) {
+    if (i==getCurrentSectionIndex()) navBtns[i].style.backgroundColor = "lightgray";
+    else navBtns[i].style.backgroundColor = "transparent";
+}
+
 document.addEventListener("wheel", handleWheel);  // 마우스 휠 감지하여 스크롤 동작
 
 function handleWheel(event) {
@@ -19,10 +24,15 @@ function handleWheel(event) {
         scrollToSection(currentSectionIndex + 1);
     else if (wheelDirection < 0 && currentSectionIndex > 0)
         scrollToSection(currentSectionIndex - 1);
+
 }
 
 function scrollToSection(index) { // index 섹션으로 스크롤
     sections[index].scrollIntoView({ behavior: "smooth" });
+    for (let i = 0; i < navBtns.length; i++) {
+        if (i==index) navBtns[i].style.backgroundColor = "lightgray";
+        else navBtns[i].style.backgroundColor = "transparent";
+    }
 }
 
 function getCurrentSectionIndex() { // 현재 섹션의 인덱스 반환

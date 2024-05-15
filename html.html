@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>최갱갱</title>
-    <link href="css.css" rel="stylesheet"/>
-    <link href="font.css" rel="stylesheet"/>
-    <link href="about.css" rel="stylesheet"/>
+    <link href="css/css.css" rel="stylesheet"/>
+    <link href="css/font.css" rel="stylesheet"/>
+    <link href="css/about.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/interest.css" rel="stylesheet"/>
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -29,7 +31,7 @@
 </nav>
 <main>
     <section>
-        <div id="aboutHeader" style="padding: 3%">
+        <div id="aboutHeader">
             <p style="font-family: MYYeongnamnu; font-size: 5dvb; font-weight: 550">
                 쵱갱갱 </p>
             <p style="color: gray; font-family: MYHaemalgeunSangsang; font-size: 3dvb; font-weight: 300">
@@ -57,23 +59,33 @@
     </section>
 
     <section>
-        Main
+        <p class="header">Main</p>
+
+        <div id="mContainer"></div>
+
+        <div id="contentBox">
+            <p id="contentTitle"></p>
+            <p id="content"></p>
+        </div>
     </section>
 
     <section>
-        Interest
+        <p class="header">Interest</p>
+
+        <div id="iContainer"></div>
     </section>
 
     <section>
-        Plan
+        <p class="header">Plan</p>
     </section>
 
     <section>
-        Contact
+        <p class="header">Contact</p>
     </section>
 </main>
 
-<script src="scroll.js">
-</script>
+<script src="javascript/scroll.js"></script>
+<script src="javascript/mainBtn.js"></script>
+<script src="javascript/interestBtn.js"></script>
 </body>
 </html>
