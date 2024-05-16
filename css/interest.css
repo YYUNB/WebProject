@@ -1,10 +1,38 @@
 section:nth-of-type(3) {
-    flex-direction:column;
-    justify-content: center;
-    align-content: center;
+    /*flex-direction:column;
+    justify-content: flex-start;
+    align-content: center;*/
 }
 
 .interestBtn {
-    width: 100%;
+    display: block;
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
+    margin-bottom: 40%;
+
+    color: white;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
 }
+.interestBtn:hover {
+
+}
+
+
+.interestBtn:nth-child(1) {
+    background-image: url(/i1.jpg);
+
+}
+
+
+.interestBtn:nth-child(2) {
+    background-image: url(/i2.jpg);
+}
+
+
+.interestBtn:nth-child(3) {
+    background-image: url(/i3.jpg);
+}
+
