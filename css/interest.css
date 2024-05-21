@@ -9,7 +9,6 @@ section:nth-of-type(3) {
     height: 180px;
     width: 180px;
     border-radius: 50%;
-    margin-bottom: 40%;
 
     color: white;
     background-repeat: no-repeat;
@@ -36,3 +35,6 @@ section:nth-of-type(3) {
     background-image: url(/i3.jpg);
 }
 
+#iTable {
+    text-align: center;
+}
