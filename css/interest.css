@@ -2,39 +2,39 @@ section:nth-of-type(3) {
     /*flex-direction:column;
     justify-content: flex-start;
     align-content: center;*/
+    padding: 0 10%;
+}
+
+.moved {
+    transform: translateX(-250%); /* Adjust the value as needed */
 }
 
 .interestBtn {
     display: block;
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
+
     border-radius: 50%;
+    margin: 20px 0;
 
     color: white;
-    background-repeat: no-repeat;
-    background-color: transparent;
-
+    transition: transform 0.5s ease;
 }
 .interestBtn:hover {
 
 }
-
 
 .interestBtn:nth-child(1) {
     background-image: url(/i1.jpg);
 
 }
 
-
 .interestBtn:nth-child(2) {
     background-image: url(/i2.jpg);
 }
 
 
-.interestBtn:nth-child(3) {
+.interestBtn:nth-of-type(3) {
     background-image: url(/i3.jpg);
 }
 
-#iTable {
-    text-align: center;
-}

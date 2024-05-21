@@ -8,6 +8,7 @@
     <link href="css/about.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
     <link href="css/interest.css" rel="stylesheet"/>
+    <link href="css/plan.css" rel="stylesheet"/>
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -71,31 +72,15 @@
 
     <section>
         <p class="header">Interest</p>
-<!--
-        <div id="iContainer">
-            <button class='interestBtn'>1</button>
-            <button class='interestBtn'>2</button>
-            <button class='interestBtn'>3</button>
-        </div>-->
 
-        <table id="iTable" border="1">
-            <tr>
-                <td style="width: 30%"><button class='interestBtn'>1</button></td>
-                <td>context1</td>
-            </tr>
-            <tr>
-                <td><button class='interestBtn'>2</button></td>
-                <td>context2</td>
-            </tr>
-            <tr>
-                <td><button class='interestBtn'>3</button></td>
-                <td>context3</td>
-            </tr>
-        </table>
+        <div id="iBtns"></div>
+        <div id="descriptions"></div>
+
     </section>
 
     <section>
         <p class="header">Plan</p>
+        <canvas id="myCanvas"></canvas>
     </section>
 
     <section>
@@ -106,5 +91,6 @@
 <script src="javascript/scroll.js"></script>
 <script src="javascript/mainBtn.js"></script>
 <script src="javascript/interestBtn.js"></script>
+<script src="javascript/plan.js"></script>
 </body>
 </html>
