@@ -9,6 +9,7 @@
     <link href="css/main.css" rel="stylesheet"/>
     <link href="css/interest.css" rel="stylesheet"/>
     <link href="css/plan.css" rel="stylesheet"/>
+    <link href="css/contact.css" rel="stylesheet"/>
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -33,7 +34,7 @@
 <main>
     <section>
         <div id="aboutHeader">
-            <p style="font-family: MYYeongnamnu; font-size: 5dvb; font-weight: 550">
+            <p style="font-family: MYYeongnamnu; font-size: 53px; font-weight: 550">
                 쵱갱갱 </p>
             <p style="color: gray; font-family: MYHaemalgeunSangsang; font-size: 3dvb; font-weight: 300">
                 우리는 꿈을 꾸는 소녀들 픽미픽미업<br>
@@ -62,9 +63,9 @@
     <section>
         <p class="header">Main</p>
 
-        <div id="mContainer"></div>
+        <div id="mainBtnDiv"></div>
 
-        <div id="contentBox">
+        <div id="mainContentDiv">
             <p id="contentTitle"></p>
             <p id="content"></p>
         </div>
@@ -80,11 +81,24 @@
 
     <section>
         <p class="header">Plan</p>
-
+        <canvas id="myCanvas"></canvas>
     </section>
 
-    <section>
+    <section style="flex-direction: row; flex-wrap: wrap; justify-content: center">
         <p class="header">Contact</p>
+        <div class="contactDiv">
+            <p class="contactP">Cheer!</p>
+        </div>
+        <div class="contactDiv">
+            <p class="contactP">Send</p>
+            <form class="gform" method="POST" data-email="yunk01091@gmail.com"
+                  action="https://script.google.com/macros/s/AKfycbzBpoLHasaLFhsXvomf08t-kN8vI4Rrks6yPXbHXGnYt8EnJMIz4Ipj4zD6SD89jfr2/exec">
+                <input type="text" id="contact_name" class="form-control" name="name" placeholder="Your name" required>
+                <input type="text" id="contact_email" class="form-control" name="email" placeholder="Your email" required>
+                <textarea id="contact_message" class="form-control" name="message" rows="10" placeholder="Your message"  required></textarea><br>
+                <button id="btnSubmit" class="btn-submit mt-2" onclick="clickSend(this)">Send</button>
+            </form>
+        </div>
     </section>
 </main>
 
@@ -92,5 +106,16 @@
 <script src="javascript/mainBtn.js"></script>
 <script src="javascript/interestBtn.js"></script>
 <script src="javascript/plan.js"></script>
+
+<script data-cfasync="false" type="text/javascript"
+        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
+<script>
+    function clickSend(btn) {
+        btn.style.backgroundColor = "#485767";
+        btn.style.color = "lightgray"
+        alert("메일이 전송되었습니다!");
+    }
+</script>
 </body>
 </html>

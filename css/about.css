@@ -4,6 +4,8 @@
     align-items: center;
     align-content: center;
     padding-top: 5%;
+
+    text-shadow: 0 0 2px #34495e;
 }
 
 #profile {
@@ -21,8 +23,8 @@
 
     background-color: rgba(255, 255, 255, 0.9);
 
-    border-radius: 10px;
-    box-shadow: 0 0 25px gray;
+    border-radius: 23px;
+    box-shadow: 3px 5px 15px darkgray;
 }
 
 #aboutMeTable {
@@ -33,5 +35,5 @@
     text-align: left;
 
     margin: 0 auto;
-    padding-top: 1.5% ;
+    padding-top: 1.3% ;
 }

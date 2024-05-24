@@ -9,8 +9,12 @@ navBtns.forEach((btn, index) => {
 });
 
 for (let i = 0; i < navBtns.length; i++) {
-    if (i==getCurrentSectionIndex()) navBtns[i].style.backgroundColor = "lightgray";
-    else navBtns[i].style.backgroundColor = "transparent";
+    if (i==getCurrentSectionIndex()) {
+        if (i%2==0) navBtns[i].style.backgroundColor = "#4c657c";
+        else navBtns[i].style.backgroundColor = "#617e6e";
+        navBtns[i].style.color = "#f0f0f0";
+        navBtns[i].style.width = "70px";
+    }
 }
 
 document.addEventListener("wheel", handleWheel);  // 마우스 휠 감지하여 스크롤 동작
@@ -30,8 +34,15 @@ function handleWheel(event) {
 function scrollToSection(index) { // index 섹션으로 스크롤
     sections[index].scrollIntoView({ behavior: "smooth" });
     for (let i = 0; i < navBtns.length; i++) {
-        if (i==index) navBtns[i].style.backgroundColor = "lightgray";
-        else navBtns[i].style.backgroundColor = "transparent";
+        if (i==index) {
+            if (i%2==0) navBtns[i].style.backgroundColor = "#4c657c";
+            else navBtns[i].style.backgroundColor = "#617e6e";
+            navBtns[i].style.color = "#f0f0f0";
+        }
+        else {
+            navBtns[i].style.backgroundColor = "transparent";
+            navBtns[i].style.color = "black";
+        }
     }
 }
 

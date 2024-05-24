@@ -1,0 +1,76 @@
+.contactDiv {
+    display: inline-block;
+    background-color: lightgray;
+    border-radius: 30px;
+    width: 34%; height: 75%;
+
+    margin: 0 2%;
+
+    text-align: center;
+    align-content: center;
+}
+
+.contactP {
+    font-family: Freesentation-9Black;
+    font-size: 32px;
+    color: #34495e;
+    text-shadow: 0 2px 3px darkgray;
+}
+
+#myCanvas {
+    width: 80%;
+    height: 60%;
+    background-color: #f0f0f0;
+}
+
+
+
+
+.form-control {
+    border: none!important;
+    border-radius: 10px;
+
+    width: 65%;
+    padding: 10px;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+
+    box-shadow: 0 1px 5px darkgray;
+}
+
+.form-control::placeholder {
+    color: #D2D2D2;
+}
+
+#contact_name {
+    height: 30px;
+    margin-top: 3%;
+}
+
+#contact_email {
+    height: 30px;
+    margin-top: 1.2%;
+}
+
+#contact_message {
+    margin-top: 3%;
+    resize: none;
+}
+
+#btnSubmit {
+
+    width: 20%;
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+    margin: 5% 0;
+
+    font-size: 20px;
+
+    color: #f0f0f0;
+    background-color: #34495e;
+
+    box-shadow: 0 1px 5px darkgray;
+}

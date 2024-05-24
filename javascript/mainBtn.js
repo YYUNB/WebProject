@@ -20,7 +20,7 @@ var contentStr = [
 ];
 
 // 버튼을 생성할 부모 요소 선택
-const mContainer = document.getElementById('mContainer');
+const mContainer = document.getElementById('mainBtnDiv');
 
 for (let i = 1; i <= 5; i++) { // 버튼 생성 및 배열에 추가
     const button = document.createElement('button');
@@ -43,12 +43,12 @@ function clickBtn(index) {
         content.innerHTML = contentStr[index];
 
         if (i==index) {
-            mainBtn[i].style.backgroundColor = "gray";
-            mainBtn[i].style.color = "white";
+            mainBtn[i].style.backgroundColor = "#617e6e";
+            mainBtn[i].style.color = "#f0f0f0";
         }
         else {
             mainBtn[i].style.backgroundColor = "#f0f0f0";
-            mainBtn[i].style.color = "black";
+            mainBtn[i].style.color = "dimgray";
         }
 
     }
