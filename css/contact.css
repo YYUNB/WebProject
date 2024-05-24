@@ -8,6 +8,8 @@
 
     text-align: center;
     align-content: center;
+
+    box-shadow: 3px 5px 13px darkgray;
 }
 
 .contactP {
@@ -20,11 +22,12 @@
 #myCanvas {
     width: 80%;
     height: 60%;
-    background-color: #f0f0f0;
+    background-color: white;
+    margin-top: 4%;
+
+    border-radius: 15px;
+    box-shadow: 0 1px 5px darkgray;
 }
-
-
-
 
 .form-control {
     border: none!important;

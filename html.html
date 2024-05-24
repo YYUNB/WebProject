@@ -23,7 +23,7 @@
         }
     </script>
 </head>
-<body>
+<body onload="init()">
 <nav>
     <div class="nav">About</div>
     <div class="nav">Main</div>
@@ -81,22 +81,23 @@
 
     <section>
         <p class="header">Plan</p>
-        <canvas id="myCanvas"></canvas>
+
     </section>
 
     <section style="flex-direction: row; flex-wrap: wrap; justify-content: center">
         <p class="header">Contact</p>
         <div class="contactDiv">
-            <p class="contactP">Cheer!</p>
+            <p class="contactP">Cheer for me!</p>
+            <canvas id="myCanvas"></canvas>
         </div>
         <div class="contactDiv">
             <p class="contactP">Send</p>
-            <form class="gform" method="POST" data-email="yunk01091@gmail.com"
+            <form id="gformm" class="gform" method="POST" data-email="yunk01091@gmail.com"
                   action="https://script.google.com/macros/s/AKfycbzBpoLHasaLFhsXvomf08t-kN8vI4Rrks6yPXbHXGnYt8EnJMIz4Ipj4zD6SD89jfr2/exec">
                 <input type="text" id="contact_name" class="form-control" name="name" placeholder="Your name" required>
                 <input type="text" id="contact_email" class="form-control" name="email" placeholder="Your email" required>
                 <textarea id="contact_message" class="form-control" name="message" rows="10" placeholder="Your message"  required></textarea><br>
-                <button id="btnSubmit" class="btn-submit mt-2" onclick="clickSend(this)">Send</button>
+                <button id="btnSubmit" class="btn-submit mt-2" onclick="return check()">Send</button>
             </form>
         </div>
     </section>
@@ -106,15 +107,32 @@
 <script src="javascript/mainBtn.js"></script>
 <script src="javascript/interestBtn.js"></script>
 <script src="javascript/plan.js"></script>
+<script src="javascript/canvas.js"></script>
 
 <script data-cfasync="false" type="text/javascript"
-        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+        src="javascript/form-submission-handler.js"></script>
 
 <script>
-    function clickSend(btn) {
-        btn.style.backgroundColor = "#485767";
-        btn.style.color = "lightgray"
-        alert("메일이 전송되었습니다!");
+    function check() {
+        var email = document.getElementById("contact_email").value;
+        var send = document.getElementById("btnSubmit");
+
+        if (email != "") {
+            var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+            if(exptext.test(email)==false){
+                //이메일 형식이 알파벳+숫자@알파벳+숫자.알파벳+숫자 형식이 아닐경우
+                alert("이메일 형식이 올바르지 않습니다.");
+                email.focus();
+                document.getElementById("gformm").action = "";
+                return false; // 기본 동작을 방지
+            } else {
+                send.style.backgroundColor = "#485767";
+                send.style.color = "lightgray"
+                alert("메일이 전송되었습니다!");
+                return true; // 폼이 제출되도록 허용
+            }
+        }
+        send.disabled =false;
     }
 </script>
 </body>
