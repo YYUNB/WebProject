@@ -1,3 +1,4 @@
+/*
 let interestBtn = [];
 
 const iContainer = document.getElementById('iBtns');
@@ -32,3 +33,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+*/
