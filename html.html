@@ -18,8 +18,8 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
 
     <script>
-        function openGit(url) {
-            window.open(url, "myWin", "left=300, top=300, width=400, height=300")
+        function openGit() {
+            window.open("https://github.com/YYUNB", "myWin")
         }
     </script>
 </head>
@@ -55,20 +55,22 @@
                 <tr><td><i class="fi fi-rr-graduation-cap" style="font-size: 20px"></i></td>
                     <td>국립공주대학교 소프트웨어학과</td></tr>
                 <tr><td><i class="fi fi-brands-github" style="font-size: 20px"></i></td>
-                    <td><a href="javascript:openGit('https://github.com/YYUNB')">Git</a></td></tr>
+                    <td><a href="javascript:openGit()">Git</a></td></tr>
             </table>
         </div>
     </section>
 
     <section>
         <p class="header">Main</p>
+            <div id="mainBox">
+                <div id="mainBtnDiv"></div>
 
-        <div id="mainBtnDiv"></div>
+                <div id="mainContentDiv">
+                    <p id="contentTitle"></p>
+                    <span id="content"></span>
+                </div>
+            </div>
 
-        <div id="mainContentDiv">
-            <p id="contentTitle"></p>
-            <p id="content"></p>
-        </div>
     </section>
 
     <section>
