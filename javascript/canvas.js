@@ -6,16 +6,16 @@ function init() {
     context.lineWidth = 2;
     context.strokeStyle = "#34495e";
 
-    canvas.addEventListener("mousemove", function (event) {
+    canvas.addEventListener("mousemove", function (e) {
         move(e)
     }, false);
-    canvas.addEventListener("mousedown", function (event) {
+    canvas.addEventListener("mousedown", function (e) {
         down(e)
     }, false);
-    canvas.addEventListener("mouseup", function (event) {
+    canvas.addEventListener("mouseup", function (e) {
         up(e)
     }, false);
-    canvas.addEventListener("mouseout", function (event) {
+    canvas.addEventListener("mouseout", function (e) {
         out(e)
     }, false);
 }

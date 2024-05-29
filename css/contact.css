@@ -2,9 +2,9 @@
     display: inline-block;
     background-color: lightgray;
     border-radius: 30px;
-    width: 34%; height: 75%;
+    width: 30%; height: 70%;
 
-    margin: 0 2%;
+    margin: 0 2% 2% 2%;
 
     text-align: center;
     align-content: center;
@@ -20,8 +20,6 @@
 }
 
 #myCanvas {
-    width: 80%;
-    height: 60%;
     background-color: white;
     margin: 5% 0;
 

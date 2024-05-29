@@ -5,7 +5,7 @@ section:nth-of-type(2) {
     align-content: center;
 }
 
-#mainBox {
+#intBox {
     display: flex;
     flex-direction: row;
 
@@ -14,7 +14,7 @@ section:nth-of-type(2) {
 
 }
 
-#mainBtnDiv {
+#intBtnDiv {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -25,7 +25,7 @@ section:nth-of-type(2) {
     text-align: center;
 }
 
-#mainContentDiv {
+#intContentDiv {
     display: flex;
     flex-direction: column;
 
@@ -42,7 +42,7 @@ section:nth-of-type(2) {
 }
 
 
-.mainBtn {
+.intBtn {
     width: 90px; height: 90px;
 
     font-size: 20px;
@@ -57,7 +57,7 @@ section:nth-of-type(2) {
     margin: 0 3%;
 }
 
-.mainBtn:hover {
+.intBtn:hover {
     transform: translateY(-10%);
 }
 
@@ -66,16 +66,18 @@ section:nth-of-type(2) {
     font-family: Freesentation-9Black;
     font-size: 32px;
     text-shadow: 0 2px 3px darkgray;
+    line-height: 0.5;
 
 }
 
 #content {
     font-family: Pretendard-Regular;
-    font-size: 20px;
+    font-size: 19px;
     text-align: justify;
+    line-height: 1.4;
 }
 
-.mcspan {
+.icspan {
     font-weight: bold;
     font-size: 21px;
     color: #237040;
