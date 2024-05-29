@@ -17,12 +17,11 @@ section:nth-of-type(2) {
 #intBtnDiv {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     width: 10%;
     height: 65%;
     margin: 1% 0 0 11%;
-    text-align: center;
 }
 
 #intContentDiv {
@@ -38,9 +37,7 @@ section:nth-of-type(2) {
     border-radius: 40px;
 
     box-shadow: 3px 5px 13px darkgray;
-
 }
-
 
 .intBtn {
     width: 90px; height: 90px;
