@@ -1,0 +1,33 @@
+#planD {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 60%;
+    height: 75%;
+    background-color: #f0f0f0;
+
+    margin-top: 1%;
+    margin-bottom: 4%;
+    border-radius: 40px;
+
+    box-shadow: 3px 5px 13px darkgray;
+}
+
+.planDivs {
+    margin: 2% 2%;
+}
+.planP {
+    font-family: Freesentation-9Black;
+    font-size: 23px;
+    margin-left: 3%;
+    line-height: 0.8;
+    text-shadow: 0 2px 3px darkgray;
+}
+
+.planList {
+    font-family: Pretendard-Regular;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;
+}
