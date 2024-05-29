@@ -3,7 +3,7 @@ function init() {
     canvas = document.getElementById("myCanvas");
     context = canvas.getContext("2d");
 
-    context.lineWidth = 2;
+    context.lineWidth = 4;
     context.strokeStyle = "#34495e";
 
     canvas.addEventListener("mousemove", function (e) {

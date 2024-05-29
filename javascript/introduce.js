@@ -1,5 +1,5 @@
 // 배열을 저장할 변수 선언
-let mainBtn = [];
+let introduce = [];
 var title = document.getElementById("contentTitle");
 var content = document.getElementById("content");
 
@@ -64,28 +64,28 @@ for (let i = 1; i <= 4; i++) { // 버튼 생성 및 배열에 추가
     button.textContent = i;
     button.classList.add('intBtn');
     mContainer.appendChild(button);
-    mainBtn.push(button);
+    introduce.push(button);
 }
 clickBtn(0);
 
-mainBtn.forEach((btn, index) => {
+introduce.forEach((btn, index) => {
     btn.addEventListener("click", () => {
         clickBtn(index);
     });
 });
 
 function clickBtn(index) {
-    for (let i = 0; i < mainBtn.length; i++) {
+    for (let i = 0; i < introduce.length; i++) {
         title.innerHTML = titleStr[index];
         content.innerHTML = contentStr[index];
 
         if (i==index) {
-            mainBtn[i].style.backgroundColor = "#617e6e";
-            mainBtn[i].style.color = "#f0f0f0";
+            introduce[i].style.backgroundColor = "#617e6e";
+            introduce[i].style.color = "#f0f0f0";
         }
         else {
-            mainBtn[i].style.backgroundColor = "#f0f0f0";
-            mainBtn[i].style.color = "dimgray";
+            introduce[i].style.backgroundColor = "#f0f0f0";
+            introduce[i].style.color = "dimgray";
         }
 
     }
