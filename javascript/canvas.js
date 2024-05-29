@@ -3,6 +3,12 @@ function init() {
     canvas = document.getElementById("myCanvas");
     context = canvas.getContext("2d");
 
+    var img = new Image();
+    img.src = "\canvas.png";
+    img.onload = function () {
+        context.drawImage(img, 0, 0);
+    }
+
     context.lineWidth = 4;
     context.strokeStyle = "#34495e";
 
