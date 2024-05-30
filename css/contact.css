@@ -26,6 +26,9 @@
     border-radius: 15px;
     box-shadow: 0 1px 5px darkgray;
 }
+#myCanvas:hover {
+    cursor: crosshair;
+}
 
 .form-control {
     border: none!important;

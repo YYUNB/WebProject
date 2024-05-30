@@ -9,7 +9,7 @@ function init() {
         context.drawImage(img, 0, 0);
     }
 
-    context.lineWidth = 4;
+    context.lineWidth = 5;
     context.strokeStyle = "#34495e";
 
     canvas.addEventListener("mousemove", function (e) {
