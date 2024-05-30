@@ -81,3 +81,13 @@ section:nth-of-type(2) {
     margin-bottom: 3%;
     text-shadow: 0 1px 1px darkgray;
 }
+
+#iimgD {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.iimg {
+    width: 5%;
+}

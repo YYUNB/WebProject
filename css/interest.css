@@ -5,7 +5,7 @@
 .interestTitle {
     font-family: Freesentation-9Black;
     font-size: 28px;
-    text-shadow: 0 2px 3px darkgray;
+    text-shadow: 0 1px 2px darkgray;
     line-height: 0.5;
     color: #34495e;
 }
@@ -22,7 +22,7 @@
     /*background-color: #d8dee4;*/
     font-size: 20px;
     font-weight: bold;
-    text-shadow: 0 1px 2px gray;
+    text-shadow: 0 1px 1px gray;
     line-height: 2;
 }
 .b {
