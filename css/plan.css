@@ -47,10 +47,13 @@ section:nth-of-type(2) {
 }
 
 .planP {
+    width: 90px;
+    height: 20px;
     font-family: Freesentation-9Black;
     font-size: 23px;
     margin-left: 3%;
     line-height: 0.8;
+    background-color: #dce4dc;
     text-shadow: 0 2px 3px darkgray;
 }
 

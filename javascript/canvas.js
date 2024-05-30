@@ -4,7 +4,7 @@ function init() {
     context = canvas.getContext("2d");
 
     var img = new Image();
-    img.src = "\canvas.png";
+    img.src = "content/canvas.png";
     img.onload = function () {
         context.drawImage(img, 0, 0);
     }
