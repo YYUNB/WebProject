@@ -25,9 +25,7 @@
     text-shadow: 0 1px 1px gray;
     line-height: 2;
 }
-.b {
-    font-weight: bold;
-}
+
 
 .ic {
     display: flex;
@@ -42,6 +40,8 @@
     border-radius: 30px;
     width: 30%; height: 70%;
 
+    z-index: 0;
+
     margin: 0 2.5% 2%;
     padding: 0.5% 0.5%;
 
@@ -49,4 +49,17 @@
     align-content: center;
 
     box-shadow: 3px 5px 13px #b3b2b2;
+}
+
+.icc:hover {
+    transform: translateY(-2%);
+    cursor: pointer;
+}
+
+#s {
+    font-family: pretendard-regular;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: none;
+    color: #7291aa;
 }
