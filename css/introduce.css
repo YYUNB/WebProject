@@ -27,16 +27,40 @@ section:nth-of-type(2) {
 #intContentDiv {
     display: flex;
     flex-direction: column;
-
+    position: relative; /* position을 relative로 변경 */
     width: 58%;
     height: 66%;
     background-color: #f0f0f0;
-
     margin-top: 1%;
     padding: 2% 3.5% 8%;
     border-radius: 40px;
-
     box-shadow: 3px 5px 13px darkgray;
+}
+
+.navBtn {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #617e6e;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 3px 5px 13px darkgray;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+}
+
+#leftBtn {
+    right: 130px;
+    top: 30px;
+    text-align: center;
+}
+
+#rightBtn {
+    right: 50px;
+    top: 30px;
+    text-align: center;
 }
 
 .intBtn {
@@ -90,4 +114,30 @@ section:nth-of-type(2) {
 
 .iimg {
     width: 5%;
+}
+
+.content-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content-video {
+    width: 30%;
+    max-height: 500px;
+    margin-right: 20px;
+}
+
+.content-image-horizontal {
+    width: 30%;
+    max-height: 500px;
+    margin-right: 20px;
+}
+
+.content-text {
+    width: 70%;
+    font-family: Pretendard-Regular;
+    font-size: 19px;
+    text-align: justify;
+    line-height: 1.4;
 }
