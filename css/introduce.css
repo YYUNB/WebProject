@@ -116,28 +116,32 @@ section:nth-of-type(2) {
     width: 5%;
 }
 
-.content-page {
+.mcPage {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.content-video {
+.mcVideo {
     width: 30%;
     max-height: 500px;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
-.content-image-horizontal {
-    width: 30%;
+.mcImg {
     max-height: 500px;
     margin-right: 20px;
+    padding-right: 50px;
 }
 
-.content-text {
-    width: 70%;
+.mcText {
+    width: 65%;
     font-family: Pretendard-Regular;
     font-size: 19px;
     text-align: justify;
     line-height: 1.4;
+}
+
+.h {
+    background-color: #ededc0;
 }
