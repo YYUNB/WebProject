@@ -28,13 +28,11 @@
 </nav>
 <main>
     <section>
-        <div style="align-content: flex-start">
-            <audio src="content/NotWorthIt.mp3" autoplay controls loop></audio>
-        </div>
+        <audio src="content/NotWorthIt.mp3" autoplay1 controls loop></audio>
 
         <iv id="aboutHeader">
             <p style="color: #34495e;font-family: MYYeongnamnu; font-size: 53px; font-weight: 500; text-shadow: 4px 4px 5px gray;">
-                쵱갱갱 </p>
+                쵱갱갱</p>
             <p style="color: #2c303a; font-family: MYHaemalgeunSangsang; font-size: 3dvb; font-weight: 300; letter-spacing: 2px; word-spacing: 2px">
                 스스로 알을 깨면 병아리가 되지만<br>
                 남이 깨주면 계란후라이가 된다.<br>
@@ -44,7 +42,7 @@
         <div id="aboutMe"> <!--About Me-->
             <h3 style="text-align: center; font-size: 23px">About</h3>
             <table id="aboutMeTable">
-                <tr><td rowspan="5" style="width: 40%;"><img id="profile" src="/content/Me2.jpg" width="170"></td>
+                <tr><td rowspan="5" style="width: 40%;"><img id="profile" src="/content/Me.jpg" width="170"></td>
                     <td style="width: 7%"><i class="fi fi-rr-user" style="font-size: 20px"></i></td>
                     <td>최윤경</td></tr>
                 <tr><td><i class="fi fi-rr-cake-birthday" style="font-size: 20px"></i></td>
@@ -54,7 +52,7 @@
                 <tr><td><i class="fi fi-rr-graduation-cap" style="font-size: 20px"></i></td>
                     <td>국립공주대학교 소프트웨어학과</td></tr>
                 <tr><td><i class="fi fi-brands-github" style="font-size: 20px"></i></td>
-                    <td><a href="javascript:openSite('https://github.com/YYUNB')" style="color:black;">Git</a></td></tr>
+                    <td><a href="https://github.com/YYUNB" style="color:black;" target="_blank">Git</a></td></tr>
             </table>
         </div>
 
@@ -384,31 +382,30 @@
 
     function mouseOverDiv(idx) { // true = 0, false = 1
         if (idx) {
-            let span = document.getElementById('spanReactive');
+            var span = document.getElementById('spanReactive');
             span.innerHTML = changeArr[0];  // 장단점 삽입
         } else {
-            let span = document.getElementById('spanAdaptive');
+            var span = document.getElementById('spanAdaptive');
             span.innerHTML = changeArr[1];
         }
     }
     function mouseOutDiv(idx) {
         if (idx) {
-            let span = document.getElementById('spanReactive');
+            var span = document.getElementById('spanReactive');
             span.innerHTML = defaultArr[0];  // 개념 삽입
         } else {
-            let span=document.getElementById('spanAdaptive');
+            var span=document.getElementById('spanAdaptive');
             span.innerHTML = defaultArr[1];
         }
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-        const b = document.getElementById('birth');
-        const birth = new Date('January 09, 2003');
-        const today = new Date();
+        var b = document.getElementById('birth');
+        var birth = new Date('January 09, 2003');
+        var today = new Date();
 
-        const diffInMs = today - birth;
-
-        const dday = Math.ceil(diffInMs / (1000 * 60 * 60 * 24));
+        var diffInMs = today - birth;
+        var dday = Math.ceil(diffInMs / (1000 * 60 * 60 * 24));
 
         b.innerHTML = "&nbsp&nbsp + " + dday + " 일";
     });

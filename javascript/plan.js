@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let planBtnArr = [];
-    const pContainer = document.getElementById('planBtnDiv');
-    const planContents = document.querySelectorAll('.planContentDiv');
+    var planBtnArr = [];
+    var pContainer = document.getElementById('planBtnDiv');
+    var planContents = document.querySelectorAll('.planContentDiv');
 
     // Create buttons dynamically
-    for (let i = 3; i < 5; i++) {
-        const button = document.createElement('button');
+    for (var i = 3; i < 5; i++) {
+        var button = document.createElement('button');
         button.textContent = i;
         button.classList.add('intBtn');
         pContainer.appendChild(button);
@@ -33,11 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         planContents.forEach((content, i) => {
-            if (i === index) {
-                content.style.visibility = "visible";
-            } else {
-                content.style.visibility = "hidden";
-            }
+            if (i === index) content.style.visibility = "visible";
+            else content.style.visibility = "hidden";
         });
     }
 });
