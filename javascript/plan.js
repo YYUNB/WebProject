@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function clickPlanBtn(index) {
         planBtnArr.forEach((btn, i) => {
-            if (i === index) {
+            if (i == index) {
                 btn.style.backgroundColor = "#617e6e";
                 btn.style.color = "#f0f0f0";
             } else {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         planContents.forEach((content, i) => {
-            if (i === index) content.style.visibility = "visible";
+            if (i == index) content.style.visibility = "visible";
             else content.style.visibility = "hidden";
         });
     }

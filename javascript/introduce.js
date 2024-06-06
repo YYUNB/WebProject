@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function clickIntBtn(index) {
-        if (index === 3) myCapabilityPage();
+         if (index == 3) myCapabilityPage();
          else {
             title.innerHTML = titleStr[index];
             content.innerHTML = contentStr[index];
@@ -188,7 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         title.innerHTML = titleStr[3];
         content.innerHTML = contentStr[3][index];
-
         setMyCapabilityBtn();
 
         document.getElementById('leftBtn').addEventListener("click", () => {
@@ -197,7 +196,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 content.innerHTML = contentStr[3][index];
             }
         });
-
         document.getElementById('rightBtn').addEventListener("click", () => {
             if (index < contentStr[3].length - 1) {
                 index++;
