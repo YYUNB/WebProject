@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="mcText">
             <p><span class='icspan'># Subway Kiosk</span></p>
             <p>&nbsp;과거 서브웨이에 키오스크가 존재하지 않을 때 <span class='h'>많은 사람들이 서브웨이의 주문이 어려워 방문하기 겁난다</span>는 글을 보고
-            이를 개선하고자 순수 자바로만 개발한 첫 토이프로젝트 입니다. 저는 사용자가 <span class='h'>직관적</span>이고 <span class='h'>편리한</span> 주문이 가능하도록 돕는 것을 목표로 하였습니다.<br><br>
+            이를 개선하고자 순수 자바로만 개발한 첫 토이프로젝트 입니다. 저는 사용자가 직관적이고 편리한 주문이 가능하도록 돕는 것을 목표로 하였습니다.<br><br>
             
             &nbsp;처음 화면을 클릭하면 메뉴 선택 화면으로 넘어가며 샌드위치, 샐러드, 사이드와 음료를 모두 주문할 수 있습니다.
             서브웨이의 목표인 <span class='h'>'고객 개인 취향에 맞는 샌드위치를 제공한다.'</span> 에 맞게
@@ -93,7 +93,9 @@ document.addEventListener("DOMContentLoaded", () => {
             
             &nbsp;UI는 Swing을 이용하여 사용자가 쉽게 이해하고 사용할 수 있도록 설계하였습니다.
             객체 설계는 메뉴의 종류와 옵션이 다양해서 어떻게 하면 <span class='h'>유지보수성과 가독성</span>을 모두 가져갈 수 있을까 고민이 많았는데
-            마침 Enum이라는 열거형 타입을 알게되어 이를 활용하여 설계하였습니다.   
+            마침 Enum이라는 열거형 타입을 알게되어 이를 활용하여 설계하였습니다. <br><br>
+       
+            &nbsp;열거형 타입의 유용성과  <span class='h'>객체 지향 언어</span>의 효율성을 알 수 있었던 좋은 프로젝트 경험이었습니다.
             <br><br></p>
         </div>
     </div>`,

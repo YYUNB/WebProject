@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>적응형 웹 vs 반응형 웹</title>
+    <link href="css/font.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Pretendard-Regular;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h3, h4 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .title {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .div {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        p { margin-left: 20px; }
+        ul {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<h2>적응형 vs 반응형 웹 디자인</h2>
+<hr>
+
+<div class="title">
+    <h3>적응형 웹 디자인</h3>
+</div>
+<p>특정 장치 유형 및 화면 크기에 최적화된 여러 고정된 레이아웃을 사용하여 사용자 경험을 제공하는 접근 방식.</p>
+
+<div class="div">
+    <h4>개발</h4>
+    <ul>
+        <li>다양한 화면 크기를 위해 여러 고정된 레이아웃 설계</li>
+        <li>서버 측 로직을 구현하여 디바이스 유형 감지 및 적절한 레이아웃 제공</li>
+        <li>각 레이아웃 간의 일관성을 유지하면서 최적화된 사용자 경험 제공</li>
+    </ul>
+</div>
+
+<div class="div">
+    <h4>언어</h4>
+    <ul>
+        <li>HTML/CSS: 다양한 디바이스에 맞춘 고정된 레이아웃 정의</li>
+        <li>JavaScript: 클라이언트 상호작용 관리 및 동적 콘텐츠 로드</li>
+        <li>서버 사이드 언어: Node.js, Python, PHP 등 사용자 에이전트<br> 감지 및 적절한 레이아웃 제공</li>
+    </ul>
+</div>
+
+<div class="div">
+    <h4>장점</h4>
+    <ul>
+        <li>각 디바이스에 최적화된 레이아웃 제공하여 최상의 사용자 경험 제공</li>
+        <li>기기별로 다른 콘텐츠와 기능 제공 가능하여 사용자 맞춤형 경험 가능</li>
+        <li>미리 정의된 레이아웃 사용으로 로딩 속도와 성능 최적화 가능</li>
+    </ul>
+</div>
+
+<div class="div">
+    <h4>단점</h4>
+    <ul>
+        <li>다양한 디바이스에 맞는 여러 레이아웃 설계 및 유지보수에 추가<br> 비용, 시간 소요</li>
+        <li>새로운 디바이스 등장 시 추가적인 레이아웃 설계 필요</li>
+        <li>서버 측 처리 필요로 클라이언트 측보다 복잡한 구현 요구</li>
+    </ul>
+</div>
+
+<div class="div">
+    <h4>성능</h4>
+    <ul>
+        <li>사용자 에이전트 감지를 위한 서버 측 로직 최적화</li>
+        <li>불필요한 리소스 로드를 줄이기 위한 조건부 로드</li>
+        <li>각 레이아웃의 이미지 및 리소스 최적화</li>
+    </ul>
+</div>
+
+<div class="div">
+    <h4>트렌드</h4>
+    <ul>
+        <li>머신 러닝을 통해 사용자 디바이스 및 행동 예측</li>
+        <li>사용자 경험 향상을 위한 A/B 테스트와 같은 기법 사용</li>
+        <li>디바이스 간 원활한 전환을 위한 지속적인 인터페이스 최적화</li>
+    </ul>
+</div>
+<br>
+<hr>
+
+<div class="title">
+    <h3>반응형 웹 디자인</h3>
+</div>
+<p>단일 코드베이스를 사용하여 다양한 화면 크기와 장치에서 일관된 사용자 경험을 제공하는 접근 방식.
+    CSS 미디어 쿼리와 유연한 그리드 시스템을 활용하여 브라우저 크기에 따라 레이아웃을 동적으로 조절함.</p>
+
+<div class="div">
+    <h4>개발</h4>
+    <ul>
+        <li>CSS 미디어 쿼리와 유연한 그리드 시스템 사용하여 다양한 화면<br> 크기 및 해상도에 대응</li>
+        <li>이미지 및 미디어 파일의 유연한 크기 조절을 통해 성능 최적화</li>
+        <li>콘텐츠의 중요도에 따라 레이아웃을 재배치하여 사용자 경험 극대화</li>
+    </ul>
+</div>
+
+<div class="div">
+    <h4>언어</h4>
+    <ul>
+        <li>HTML5/CSS3: 유연한 레이아웃과 미디어 쿼리를 통한 반응형 디자인 구현</li>
+        <li>JavaScript: 동적 콘텐츠와 사용자 상호작용 관리</li>
+        <li>CSS 프레임워크: Bootstrap, Foundation 등 반응형 디자인을 쉽게 구현할 수 있도록 지원</li>
+        <li>프론트엔드 라이브러리 및 프레임워크: React, Vue.js 등 동적 데이터와 상호작용 쉽게 관리</li>
+    </ul>
+</div>
+
+<div class="div">
+    <h4>장점</h4>
+    <ul>
+        <li>하나의 코드베이스로 모든 디바이스에 대응 가능하여 개발 및 유지보수 용이</li>
+        <li>브라우저 크기에 따라 레이아웃이 동적으로 조절되어 일관된 사용자 경험 제공</li>
+        <li>유연한 디자인으로 다양한 화면 크기와 해상도에 최적화</li>
+    </ul>
+</div>
+
+<div class="div">
+    <h4>단점</h4>
+    <ul>
+        <li>복잡한 레이아웃 구현이 어려울 수 있음</li>
+        <li>브라우저 호환성 고려 필요로 추가적인 CSS 작업 필요</li>
+        <li>고해상도 디스플레이에서 이미지 품질 유지가 어려울 수 있음</li>
+    </ul>
+</div>
+
+<div class="div">
+    <h4>성능</h4>
+    <ul>
+        <li>미디어 쿼리 사용 시 불필요한 CSS 로드 최소화</li>
+        <li>반응형 이미지 사용으로 다양한 해상도에 대응</li>
+        <li>필요한 경우에만 JavaScript 로드 및 실행</li>
+    </ul>
+</div>
+
+<div class="div">
+    <h4>트렌드</h4>
+    <ul>
+        <li>CSS Grid와 Flexbox를 활용한 정교한 레이아웃 설계</li>
+        <li>SVG와 같은 벡터 그래픽 사용 증가로 모든 해상도에서 선명한 이미지 제공</li>
+        <li>다크 모드 지원 및 사용자 맞춤형 테마 제공</li>
+    </ul>
+</div>
+
+</body>
+</html>

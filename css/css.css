@@ -1,7 +1,6 @@
 body {
     overflow: hidden;
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 section {
@@ -21,6 +20,7 @@ section:nth-child(even) {
 }
 
 nav {
+    font-family: Arial, sans-serif;
     position: fixed;
     top: 17%;
     left: 88%;
