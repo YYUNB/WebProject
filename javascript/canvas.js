@@ -48,5 +48,3 @@ function move(e) {
     startX = curX; startY = curY;
 }
 function out(e) {drawing=false;}
-
-// 왜 안되닝
